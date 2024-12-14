@@ -51,7 +51,7 @@ Frame.Active = true
 Frame.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.307065219, 0, 0.158102766, 0)
+Frame.Position = UDim2.new(0.306612313, 0, 0.158102781, 0)
 Frame.Size = UDim2.new(0.386775374, 0, 0.683794439, 0)
 
 StormWareMOBILE.Name = "StormWare (MOBILE)"
@@ -326,14 +326,14 @@ SWButton.TextStrokeTransparency = 0.300
 
 -- Scripts:
 
-local function EFBJSQD_fake_script() -- Frame.LocalScript 
+local function FVMVK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Frame.Active = true
 	Frame.Draggable = true
 end
-coroutine.wrap(EFBJSQD_fake_script)()
-local function YYUR_fake_script() -- JumpButton.LocalScript 
+coroutine.wrap(FVMVK_fake_script)()
+local function CKUEHD_fake_script() -- JumpButton.LocalScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	-- LocalScript inside the "JumpButton"
@@ -385,8 +385,8 @@ local function YYUR_fake_script() -- JumpButton.LocalScript
 		end
 	end
 end
-coroutine.wrap(YYUR_fake_script)()
-local function KKADIU_fake_script() -- NoclipButton.LocalScript 
+coroutine.wrap(CKUEHD_fake_script)()
+local function HXZBOB_fake_script() -- NoclipButton.LocalScript 
 	local script = Instance.new('LocalScript', NoclipButton)
 
 	local noclipEnabled = false
@@ -446,8 +446,8 @@ local function KKADIU_fake_script() -- NoclipButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KKADIU_fake_script)()
-local function BDKVV_fake_script() -- FlyButton.LocalScript 
+coroutine.wrap(HXZBOB_fake_script)()
+local function PLRWQ_fake_script() -- FlyButton.LocalScript 
 	local script = Instance.new('LocalScript', FlyButton)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -519,8 +519,8 @@ local function BDKVV_fake_script() -- FlyButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BDKVV_fake_script)()
-local function VFOTJ_fake_script() -- SpeedButton.LocalScript 
+coroutine.wrap(PLRWQ_fake_script)()
+local function APLCD_fake_script() -- SpeedButton.LocalScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	local speed = 70
@@ -547,8 +547,8 @@ local function VFOTJ_fake_script() -- SpeedButton.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
 	end
 end
-coroutine.wrap(VFOTJ_fake_script)()
-local function WVGQXA_fake_script() -- Speed.LocalScript 
+coroutine.wrap(APLCD_fake_script)()
+local function DZMFHDR_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -582,8 +582,8 @@ local function WVGQXA_fake_script() -- Speed.LocalScript
 	-- Connect the button click to the teleport function
 	teleportButton.MouseButton1Click:Connect(teleportToRandomEnemy)
 end
-coroutine.wrap(WVGQXA_fake_script)()
-local function RMQEI_fake_script() -- ESPButton.LocalScript 
+coroutine.wrap(DZMFHDR_fake_script)()
+local function PDLQ_fake_script() -- ESPButton.LocalScript 
 	local script = Instance.new('LocalScript', ESPButton)
 
 	local espEnabled = false
@@ -660,8 +660,8 @@ local function RMQEI_fake_script() -- ESPButton.LocalScript
 		wait(refreshRate)
 	end
 end
-coroutine.wrap(RMQEI_fake_script)()
-local function KWFAFEU_fake_script() -- AimbotButton.LocalScript 
+coroutine.wrap(PDLQ_fake_script)()
+local function TINUK_fake_script() -- AimbotButton.LocalScript 
 	local script = Instance.new('LocalScript', AimbotButton)
 
 	local players = game:GetService("Players")
@@ -723,14 +723,14 @@ local function KWFAFEU_fake_script() -- AimbotButton.LocalScript
 	
 	aimButton.MouseButton1Click:Connect(function()
 		aimAssistEnabled = not aimAssistEnabled
-		aimButton.Text = aimAssistEnabled and "Toggle" or "Toggle"
+		aimButton.Text = aimAssistEnabled and "x" or " "
 	end)
 	
 	runService.RenderStepped:Connect(onRenderStep)
 	
 end
-coroutine.wrap(KWFAFEU_fake_script)()
-local function WIJYT_fake_script() -- TeamCheck.LocalScript 
+coroutine.wrap(TINUK_fake_script)()
+local function LYDQKW_fake_script() -- TeamCheck.LocalScript 
 	local script = Instance.new('LocalScript', TeamCheck)
 
 	local players = game:GetService("Players")
@@ -795,20 +795,20 @@ local function WIJYT_fake_script() -- TeamCheck.LocalScript
 	
 	aimButton.MouseButton1Click:Connect(function()
 		aimAssistEnabled = not aimAssistEnabled
-		aimButton.Text = aimAssistEnabled and "TeamCheck" or "TeamCheck"
+		aimButton.Text = aimAssistEnabled and "x" or " "
 	end)
 	
 	runService.RenderStepped:Connect(onRenderStep)
 	
 end
-coroutine.wrap(WIJYT_fake_script)()
-local function YPCSDAY_fake_script() -- Go.LocalScript 
+coroutine.wrap(LYDQKW_fake_script)()
+local function VEZLKX_fake_script() -- Go.LocalScript 
 	local script = Instance.new('LocalScript', Go)
 
 	
 end
-coroutine.wrap(YPCSDAY_fake_script)()
-local function QHMJ_fake_script() -- SWButton.LocalScript 
+coroutine.wrap(VEZLKX_fake_script)()
+local function ASNS_fake_script() -- SWButton.LocalScript 
 	local script = Instance.new('LocalScript', SWButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -816,8 +816,8 @@ local function QHMJ_fake_script() -- SWButton.LocalScript
 		frame.Visible = not frame.Visible
 	end)
 end
-coroutine.wrap(QHMJ_fake_script)()
-local function CYMGD_fake_script() -- NewStormWareMobile.LocalScript 
+coroutine.wrap(ASNS_fake_script)()
+local function ZPRC_fake_script() -- NewStormWareMobile.LocalScript 
 	local script = Instance.new('LocalScript', NewStormWareMobile)
 
 	-- Define the UI creation function
@@ -851,4 +851,4 @@ local function CYMGD_fake_script() -- NewStormWareMobile.LocalScript
 	-- Call createUI initially when the script runs (in case UI was missing at start)
 	createUI()
 end
-coroutine.wrap(CYMGD_fake_script)()
+coroutine.wrap(ZPRC_fake_script)()
